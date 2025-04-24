@@ -1,0 +1,8 @@
+[build]
+  # Replace "dist" with your actual build folder (e.g., "build", "out", "docs")
+  publish = .  
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
