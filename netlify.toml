@@ -7,3 +7,9 @@
   to = "/"
   status = 301
   force = true  # Ensures the redirect happens even if index.html exists
+
+  [[redirects]]
+    from = "https://portermorgan.netlify.app/*"
+    to = "https://portermorgan.xyz/:splat"
+    status = 301
+    force = true
