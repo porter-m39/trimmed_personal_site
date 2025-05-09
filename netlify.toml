@@ -12,4 +12,4 @@
     from = "https://portermorgan.netlify.app/*"
     to = "https://portermorgan.xyz/:splat"
     status = 301
-    force = true
+    force = true 
