@@ -63,6 +63,7 @@ h2{
     font-size: 1.5vw;
     font-weight: normal;
     margin-left: 1vw;
+    margin-top:6vw;
 
 }
 
@@ -99,7 +100,7 @@ object {
     position:fixed;
     left: 50%;
     transform: translate(-50%, 0%);
-    top:13vw;
+    top:6vw;
 }
 
 img.framed {
