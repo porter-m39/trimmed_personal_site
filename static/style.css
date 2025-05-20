@@ -77,6 +77,13 @@ h3{
     margin-bottom: 8vh;
 }
 
+/* Override for phone-sized screens (≤ 767px) */
+@media (max-width: 767px) {
+    .gap_below {
+        margin-bottom: 20px; /* Fixed margin on phones */
+    }
+}
+
 p {
     text-align:left;
     padding: auto; /* maybe this will help make nicer vertical spacing? */ 
