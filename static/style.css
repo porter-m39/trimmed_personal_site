@@ -101,6 +101,9 @@ object {
     left: 50%;
     transform: translate(-50%, 0%);
     top:6vw;
+    max-width: 100%;
+    width: 70vw;
+    height: 85vh;
 }
 
 img.framed {
