@@ -97,6 +97,12 @@ p {
     margin-bottom: 3vh;
 }
 
+/* editing bold class */
+b{
+    font-weight: 600;
+    letter-spacing: .01em;
+}
+
 a {  /* color of links */
     text-decoration: none;
     color: rgb(131, 153, 241);
