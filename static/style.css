@@ -10,8 +10,15 @@ body{
     font-size: 1.1vw;
     background-color: darkgreen;
     color:whitesmoke;
-    max-width: 1200px;
-    margin-left: 2vw; 
+    /* max-width: 1200px; */
+    /* margin-left: 2vw;  */
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 60vw 25vw;
+    gap: 8vw;
+    /* align-items: start; */
 }
 
 /* THIS STUFF IS NOT DOING ANYTHING, SINCE THE ONLY THING DISPLAYING ON THE WEBSITE IS A HEADER, NOT A TITLE.
@@ -22,16 +29,20 @@ title{
     font-size: 2rem;
 } */
 
+.main-content {
+    margin-left: 2vw;
+}
+
+
+
 
 nav {
     color: whitesmoke;
     background-color: rgb(62, 168, 62);
-    position: fixed;
-    right: 0;
-    top:0;
+    position: static;
     font-size: 8vh; 
     text-align: right;
-    width: 100vw;
+    width: 100%;
     height : 10vh;
     border-bottom : .4vh solid whitesmoke;
 }
@@ -40,8 +51,6 @@ nav a {
     color: whitesmoke;
     margin-right: 1vw;
 }
-
-
 
 footer{
     position: relative;
@@ -75,19 +84,6 @@ h3{
 
 .gap_below{
     margin-bottom: 8vh;
-}
-
-/* Override for phone-sized screens (≤ 767px) */
-@media (max-width: 767px) {
-    .gap_below {
-        margin-bottom: 20px; /* Fixed margin on phones */
-    }
-
-    nav {
-    font-size: 4vh; 
-    height : 5vh;
-    border-bottom : .2vh solid whitesmoke;
-    }
 }
 
 p {
@@ -150,3 +146,74 @@ main {
     display: grid;
     place-content: center;
 }
+
+/* Override for phone-sized screens (≤ 767px) */
+@media (max-width: 767px) {
+
+    .gap_below {
+        margin-bottom: 20px; /* Fixed margin on phones */
+    }
+
+    nav {
+        font-size: 1.7rem; 
+        height : 2rem;
+        border-bottom : .1rem solid whitesmoke;
+    }
+
+    body {
+        /* padding: 10px; */
+        font-size: small;
+    }
+
+    .main-content{
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: large;
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
+    h3 {
+        font-size: medium;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-content {
+        order: 2;
+    }
+
+    img.framed {
+        padding: 3vw;
+    }
+
+    object {
+        /* position:fixed;
+        left: 50%;
+        transform: translate(-50%, 0%);*/
+        top:2.5rem; 
+        max-width: 100%;
+        width: 90vw;
+    }
+
+    .image-container {
+        /* text-align: center; */
+        margin: 1.5rem; 
+        order: 1;
+    }
+
+    .image-container img {
+        margin-top: 0vh !important;
+        /* max-width: 100px; */
+    }
+
+}
+

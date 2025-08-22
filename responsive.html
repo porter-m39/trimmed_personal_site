@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_blank"> <!-- default setting: links open in new tab. -->
+    <title>  Responsive Page  </title>
+    
+    <!-- can include a java script here -->
+
+    <style>
+
+        .content-container {
+                display: grid;
+                grid-template-columns: 60vw 25vw;
+                gap: 8vw;
+                /* align-items: start; */
+            }
+
+        /* Mobile Styles (applies when screen ≤ 768px wide) */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                font-size: small;
+            }
+
+            h1 {
+                font-size: large;
+            }
+
+            h2 {
+                font-size: medium;
+            }
+
+            h3 {
+                font-size: medium;
+            }
+
+            .content-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .text-content {
+                order: 2;
+            }
+
+            .image-container {
+                /* text-align: center;
+                margin: 2rem 0; */
+                order: 1;
+            }
+
+            .image-container img {
+                margin-top: 15vh !important;
+                /* max-width: 100px; */
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            Responsive site!
+        </nav>
+    </header>
+
+    <div class = "content-container">
+        <div class="text-content">
+                
+            <h1> Porter Morgan </h1>
+
+            <p> I'm a fifth year Math PhD student at the University of Massachussets Amherst, advised by <a href = "https://people.math.umass.edu/~baykur/"> Inanc Baykur</a>. I study low-dimensional topology, specifically 4-manifolds. I'm interested in Lefschetz fibrations, nonorientable 4-manifolds, and exotic smooth structures. </p>
+    
+            <p class=gap_below> Contact: pamorgan AT umass DOT edu  </p>
+                
+            <p>
+                <h3> Papers and preprints: </h3>
+                <ul class=gap_below>
+                    <li> <b>On nonorientable 4-manifolds.</b> Joint with R. İnanç Baykur. <i> Preprint,</i> 2025. <a href = "https://arxiv.org/pdf/2506.20950" > [PDF]</a> </li>
+                    <li> <b>Irreducible 4-manifolds with order two fundamental group.</b> Joint with Mihail Arabadji. <i> Preprint,</i> 2025. <a href = "https://arxiv.org/pdf/2502.07689" > [PDF]</a> </li>
+                    <li> <b>Belted sum decompositions of fully augmented links.</b> With Brian Ransom, Dean Spyropoulos, Rolland Trapp, and Cameron Ziegler. <i>New York J. Math</i>, 31 (2025):1-42, 2024. <a href="https://arxiv.org/pdf/2311.13540" > [PDF] </a> </li>
+                </ul>
+            </p>
+        
+            <footer>
+                <p> Last updated: August 2025 </p>
+            </footer>
+
+        </div>
+            
+    
+        <div class = "image-container">
+            <figure>
+                <img 
+                    class = "framed"
+                    src= "static/website_pic.jpg"
+                    alt = "Porter Morgan"
+                    style="margin-top:20vh"
+                >
+            </figure>
+        </div> 
+    </div>
+
+    <!-- <div class = "mobile-only">
+                
+        <h1> Porter Morgan </h1>
+
+        <figure>
+            <img 
+                class = "framed"
+                src= "static/website_pic.jpg"
+                alt = "Porter Morgan"
+                style="margin-top:20vh"
+            >
+        </figure>
+
+        <p> I'm a fifth year Math PhD student at the University of Massachussets Amherst, advised by <a href = "https://people.math.umass.edu/~baykur/"> Inanc Baykur</a>. I study low-dimensional topology, specifically 4-manifolds. I'm interested in Lefschetz fibrations, nonorientable 4-manifolds, and exotic smooth structures. </p>
+
+        <p class=gap_below> Contact: pamorgan AT umass DOT edu  </p>
+            
+        <p>
+            <h3> Papers and preprints: </h3>
+            <ul class=gap_below>
+                <li> <b>On nonorientable 4-manifolds.</b> Joint with R. İnanç Baykur. <i> Preprint,</i> 2025. <a href = "https://arxiv.org/pdf/2506.20950" > [PDF]</a> </li>
+                <li> <b>Irreducible 4-manifolds with order two fundamental group.</b> Joint with Mihail Arabadji. <i> Preprint,</i> 2025. <a href = "https://arxiv.org/pdf/2502.07689" > [PDF]</a> </li>
+                <li> <b>Belted sum decompositions of fully augmented links.</b> With Brian Ransom, Dean Spyropoulos, Rolland Trapp, and Cameron Ziegler. <i>New York J. Math</i>, 31 (2025):1-42, 2024. <a href="https://arxiv.org/pdf/2311.13540" > [PDF] </a> </li>
+            </ul>
+        </p>
+    
+        <footer>
+            <p> Last updated: August 2025 </p>
+        </footer>
+    </div> -->
+
+    <!-- <div class="mobile-only">
+        <div style="display: grid; grid-template-columns: 60vw 25vw; gap: 8vw;">
+            <div>
+                <h1> Media version </h1>
+
+                <p> I'm a fifth year Math PhD student at the University of Massachussets Amherst, advised by <a href = "https://people.math.umass.edu/~baykur/"> Inanc Baykur</a>. I study low-dimensional topology, specifically 4-manifolds. I'm interested in Lefschetz fibrations, nonorientable 4-manifolds, and exotic smooth structures. </p>
+        
+                <p class=gap_below> Contact: pamorgan AT umass DOT edu  </p>
+                    
+                <p>
+                    <h3> Papers and preprints: </h3>
+                    <ul class=gap_below>
+                        <li> <b>On nonorientable 4-manifolds.</b> Joint with R. İnanç Baykur. <i> Preprint,</i> 2025. <a href = "https://arxiv.org/pdf/2506.20950" > [PDF]</a> </li>
+                        <li> <b>Irreducible 4-manifolds with order two fundamental group.</b> Joint with Mihail Arabadji. <i> Preprint,</i> 2025. <a href = "https://arxiv.org/pdf/2502.07689" > [PDF]</a> </li>
+                        <li> <b>Belted sum decompositions of fully augmented links.</b> With Brian Ransom, Dean Spyropoulos, Rolland Trapp, and Cameron Ziegler. <i>New York J. Math</i>, 31 (2025):1-42, 2024. <a href="https://arxiv.org/pdf/2311.13540" > [PDF] </a> </li>
+                    </ul>
+                </p>
+            
+                <footer>
+                    <p> Last updated: August 2025 </p>
+                </footer>
+            </div>
+    
+            <div>
+                <figure>
+                    <img 
+                        class = "framed"
+                        src= "static/website_pic.jpg"
+                        alt = "Porter Morgan"
+                        style="margin-top:20vh"
+                    >
+                </figure>
+            </div> 
+        </div>
+    </div> -->
+    
+    
+</body>
+</html>
