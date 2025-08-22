@@ -155,8 +155,8 @@ main {
     }
 
     nav {
-        font-size: 1.7rem; 
-        height : 2rem;
+        font-size: 2.5rem; 
+        height : 3rem;
         border-bottom : .1rem solid whitesmoke;
     }
 
@@ -199,7 +199,7 @@ main {
         /* position:fixed;
         left: 50%;
         transform: translate(-50%, 0%);*/
-        top:2.5rem; 
+        top:3.5rem; 
         max-width: 100%;
         width: 90vw;
     }
